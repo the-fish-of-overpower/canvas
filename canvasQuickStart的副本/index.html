@@ -583,6 +583,7 @@
                                             cur_particle.motion_y += speed_y;
                                             ctx.fillRect(cur_particle.motion_x, cur_particle.motion_y, 1, 1)
                                         } else {
+                                            //行动后休眠
                                             cur_particle.dormant = false
                                             cur_particle.motion_x = cur_particle.x
                                             cur_particle.motion_y = cur_particle.y
@@ -596,7 +597,6 @@
                                 } else {
                                     ctx.fillRect(particles[i].x, particles[i].y, 1, 1)
                                 }
-
                             }
                         }
                         requestAnimationFrame(motion)
